@@ -21,6 +21,6 @@ done
 
 # magick mogrify -monitor -format jpg *.HEIC
 
-ffmpeg -f image2 -framerate 9 -i image%d.jpg  ../out.gif
+ffmpeg -f image2 -framerate 9 -i image%d.jpg -vf scale=480:-1 ../out.gif
 
 rm image*
